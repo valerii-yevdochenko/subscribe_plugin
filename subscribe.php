@@ -29,7 +29,7 @@ define( 'SUBSCRIBE_URL', plugin_dir_url( __FILE__ ) );
 require_once( SUBSCRIBE_PATH . 'Database.php' );
 require_once( SUBSCRIBE_PATH . 'Shortcode.php' );
 require_once( SUBSCRIBE_PATH . 'Frontend.php' );
-require_once( SUBSCRIBE_PATH . 'Save-sub.php' );
+require_once( SUBSCRIBE_PATH . 'SubscribeRepository.php' );
 require_once( SUBSCRIBE_PATH . 'AjaxSubscribe.php' );
 
 register_activation_hook( __FILE__, [ 'Database', 'create_table' ] );

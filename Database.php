@@ -2,7 +2,7 @@
 
 class Database {
 
-	static public function get_table_name(): string {
+	public function get_table_name(): string {
 
 		global $wpdb;
 

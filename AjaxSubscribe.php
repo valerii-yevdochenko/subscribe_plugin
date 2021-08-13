@@ -1,6 +1,6 @@
 <?php
 
-class AjaxSubscribe extends SaveSubToDB {
+class AjaxSubscribe {
 
 	const SUBSCRIBE_NONCE_ACTION = 'subscribe-action';
 
@@ -24,7 +24,7 @@ class AjaxSubscribe extends SaveSubToDB {
 			);
 		}
 
-		if ( 2 === SaveSubToDB::save_subscriber( $email ) ) {
+		if ( 2 === ( new SubscribeRepository )->save_subscriber( $email ) ) {
 			wp_send_json_error(
 				sprintf(
 					esc_html__( 'The %s email is already exists', 'subscribe' ),
