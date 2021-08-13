@@ -4,7 +4,7 @@ class Frontend {
 	const SUBSCRIBE_NONCE_ACTION = 'subscribe-action';
 
 	public function frontend_hooks() {
-		add_action( 'wp_enqueue_style', [ $this, 'register_styles' ] );
+		add_action( 'wp_enqueue_scripts', [ $this, 'register_styles' ] );
 		add_action( 'wp_enqueue_scripts', [ $this, 'register_scripts' ] );
 	}
 
@@ -37,6 +37,7 @@ class Frontend {
 		);
 	}
 }
+
 
 $frontend = new Frontend();
 $frontend->frontend_hooks();
