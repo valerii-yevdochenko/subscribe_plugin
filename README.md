@@ -1,3 +1,3 @@
 # Subscribe plugin
 
-You should refactore the plugin using all your knowladge about KISS, DRY, YAGNI, SOLID, GRASP and other principles. 
+My first refactoring the plugin (https://github.com/wppunk/subscribe-patterns) using all knowladge about KISS, DRY, YAGNI, SOLID, GRASP and other principles. 
