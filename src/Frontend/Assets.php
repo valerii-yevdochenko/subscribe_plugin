@@ -1,14 +1,30 @@
 <?php
 
-class Frontend {
-	const SUBSCRIBE_NONCE_ACTION = 'subscribe-action';
+namespace WPPunk\Subscribe\Frontend;
 
-	public function frontend_hooks() {
+/**
+ * Assets class.
+ */
+class Assets {
+
+	/**
+	 * An action name for the subscription nonce.
+	 */
+	public const SUBSCRIBE_NONCE_ACTION = 'subscribe-action';
+
+	/**
+	 * Add hooks.
+	 */
+	public function add_hooks(): void {
+
 		add_action( 'wp_enqueue_scripts', [ $this, 'register_styles' ] );
 		add_action( 'wp_enqueue_scripts', [ $this, 'register_scripts' ] );
 	}
 
-	public function register_styles() {
+	/**
+	 * Register styles.
+	 */
+	public function register_styles(): void {
 
 		wp_register_style(
 			'subscribe',
@@ -18,7 +34,10 @@ class Frontend {
 		);
 	}
 
-	public function register_scripts() {
+	/**
+	 * Register scripts.
+	 */
+	public function register_scripts(): void {
 
 		wp_register_script(
 			'subscribe',
@@ -27,6 +46,7 @@ class Frontend {
 			SUBSCRIBE_VERSION,
 			true
 		);
+
 		wp_localize_script(
 			'subscribe',
 			'subscribe',
@@ -36,8 +56,5 @@ class Frontend {
 			]
 		);
 	}
+
 }
-
-
-$frontend = new Frontend();
-$frontend->frontend_hooks();
