@@ -1,5 +1,6 @@
 {
     "name": "wppunk/subscribe",
+	"description": "The plugin creates a subscription form and store subscribers into database.",
     "license": "MIT",
     "authors": [
         {
@@ -19,5 +20,8 @@
         "wp-coding-standards/wpcs": "^2.3",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
         "phpcompatibility/php-compatibility": "^9.3"
-    }
+    },
+	"scripts": {
+		"cs": "phpcs --standard=.phpcs.xml ."
+	}
 }
