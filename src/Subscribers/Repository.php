@@ -19,7 +19,7 @@ class Repository {
 		global $wpdb;
 
 		return (int) $wpdb->replace( // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
-			Database::get_table_name(),
+			Storage::get_table_name(),
 			[
 				'email' => sanitize_email( $email ),
 			],

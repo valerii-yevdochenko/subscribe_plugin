@@ -6,7 +6,7 @@ use Auryn\Injector;
 use WPPunk\Subscribe\Frontend\Ajax;
 use WPPunk\Subscribe\Frontend\Assets;
 use WPPunk\Subscribe\Frontend\Shortcode;
-use WPPunk\Subscribe\Subscribers\Database;
+use WPPunk\Subscribe\Subscribers\Storage;
 
 /**
  * Main class.
@@ -14,7 +14,7 @@ use WPPunk\Subscribe\Subscribers\Database;
 class Main {
 
 	/**
-	 * Run plugin.
+	 * Run plugin
 	 */
 	public function run(): void {
 
@@ -22,7 +22,7 @@ class Main {
 
 		foreach (
 			[
-				Database::class,
+				Storage::class,
 				Ajax::class,
 				Assets::class,
 				Shortcode::class,

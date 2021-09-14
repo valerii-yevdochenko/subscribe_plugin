@@ -3,16 +3,16 @@
 namespace WPPunk\Subscribe\Subscribers;
 
 /**
- * Database class.
+ * Storage class.
  */
-class Database {
+class Storage {
 
 	/**
 	 * Add hooks.
 	 */
 	public function add_hooks(): void {
 
-		register_activation_hook( SUBSCRIBE_PATH, [ $this, 'create_table' ] );
+		register_activation_hook( SUBSCRIBE_PATH . 'subscribe.php', [ $this, 'create_table' ] );
 	}
 
 	/**
