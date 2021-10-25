@@ -28,7 +28,7 @@ class Assets {
 
 		wp_register_style(
 			'subscribe',
-			SUBSCRIBE_URL . '/assets/css/main.css',
+			SUBSCRIBE_URL . '/assets/build/css/main.css',
 			[],
 			SUBSCRIBE_VERSION
 		);
@@ -41,7 +41,7 @@ class Assets {
 
 		wp_register_script(
 			'subscribe',
-			SUBSCRIBE_URL . '/assets/js/main.js',
+			SUBSCRIBE_URL . '/assets/build/js/main.js',
 			[],
 			SUBSCRIBE_VERSION,
 			true

@@ -1,0 +1,40 @@
+@import "vars";
+
+.subscribe-form {
+	width: 100%;
+
+	&-row {
+		display: grid;
+		align-items: center;
+	}
+
+	&-field {
+		width: 100%;
+		margin: 0;
+		padding: 0.5rem;
+	}
+
+	&-button {
+		padding: 0.5rem;
+	}
+
+	&-message {
+		position: relative;
+		padding: 0.75rem 1.25rem;
+		margin-top: 1rem;
+		border: 1px solid transparent;
+		border-radius: 0.25rem;
+
+		&-success {
+			color: $success-color;
+			background-color: $success-bg;
+			border-color: $success-bd;
+		}
+
+		&-error {
+			color: $error-color;
+			background-color: $error-bg;
+			border-color: $error-bd;
+		}
+	}
+}

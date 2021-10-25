@@ -1,6 +1,6 @@
 {
   "name": "wppunk/subscribe",
-  "description": "The plugin creates a subscription form and store subscribers into database.",
+  "description": "The plugin creates a subscription form and store subscribers into database",
   "license": "MIT",
   "authors": [
     {

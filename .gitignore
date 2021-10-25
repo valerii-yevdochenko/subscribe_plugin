@@ -1,2 +1,4 @@
 /vendor/
 /.idea/
+/assets/build/
+/node_modules/

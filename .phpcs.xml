@@ -1,11 +1,9 @@
 <?xml version="1.0"?>
-<ruleset name="Subscribe">
-    <description>The code standard for Subscribe.</description>
+<ruleset name="Subscribe CS">
+    <description>The coding standard for Subscribe plugin.</description>
     <config name="testVersion" value="7.2-"/>
-    <exclude-pattern>\.codeception/*</exclude-pattern>
     <exclude-pattern>\.github/*</exclude-pattern>
     <exclude-pattern>vendor/*</exclude-pattern>
-    <exclude-pattern>vendor_prefixed/*</exclude-pattern>
     <exclude-pattern>node_modules/*</exclude-pattern>
     <exclude-pattern>\.idea/*</exclude-pattern>
     <exclude-pattern>assets/*</exclude-pattern>

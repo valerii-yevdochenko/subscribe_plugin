@@ -12,7 +12,7 @@ class Storage {
 	 */
 	public function add_hooks(): void {
 
-		register_activation_hook( SUBSCRIBE_PATH . 'subscribe.php', [ $this, 'create_table' ] );
+		register_activation_hook( SUBSCRIBE_FILE, [ $this, 'create_table' ] );
 	}
 
 	/**

@@ -13,25 +13,17 @@ jobs:
         steps:
             -   name: Download Plugin
                 uses: actions/checkout@v2
-                with:
-                    path: ${{ env.wp-plugin-directory }}
 
             -   name: Setup PHP
                 uses: shivammathur/setup-php@v2
                 with:
                     tools: pecl
                     php-version: 7.2
-                env:
-                    update: true
-
-            -   name: Validate composer.json and composer.lock
-                working-directory: ${{ env.wp-plugin-directory }}
-                run: composer validate
 
             -   name: Install dependencies
-                working-directory: ${{ env.wp-plugin-directory }}
-                run: composer install
+                run: |
+                  composer install
+                  npm install
 
-            -   name: Validate Coding Standard
-                working-directory: ${{ env.wp-plugin-directory }}
-                run: composer cs
+            -   name: Run CS
+                run: npm run cs

@@ -22,8 +22,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 define( 'SUBSCRIBE_VERSION', '1.0.0' );
-define( 'SUBSCRIBE_PATH', plugin_dir_path( __FILE__ ) );
-define( 'SUBSCRIBE_URL', plugin_dir_url( __FILE__ ) );
+define( 'SUBSCRIBE_FILE', __FILE__ );
+define( 'SUBSCRIBE_PATH', plugin_dir_path( SUBSCRIBE_FILE ) );
+define( 'SUBSCRIBE_URL', plugin_dir_url( SUBSCRIBE_FILE ) );
 
 require_once SUBSCRIBE_PATH . 'vendor/autoload.php';
 
