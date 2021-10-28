@@ -15,8 +15,8 @@ Make sure all dependencies have been installed before moving on:
 - WordPress
 - PHP >= 7.2
 - Composer >= 2.1.9
-- Node.js >= 14.8.1
-- npm
+- Node.js >= 16.13.0
+- npm >= 8.1.0
 
 
 ## Structure
